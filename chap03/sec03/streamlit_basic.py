@@ -16,7 +16,7 @@ with st.sidebar:
 st.title("💬 Chatbot")
 
 # (1) st.session_state에 "messages"가 없으면 초기값을 설정
-if "messages" not in st.session_state:
+if "messages" not in st.session_state: 
     st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
 
 # (2) 대화 기록을 출력
