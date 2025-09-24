@@ -10,7 +10,7 @@ client = OpenAI(api_key=api_key)  # 오픈AI 클라이언트의 인스턴스 생
 # ①
 def get_ai_response(messages):
     response = client.chat.completions.create(
-        model="gpt-4o",  # 응답 생성에 사용할 모델 지정
+        model="gpt-4o",  # 응답 생성에 사용할 모델 지정정정정
         temperature=0.9,  # 응답 생성에 사용할 temperature 설정
         messages=messages,  # 대화 기록을 입력으로 전달
     )
